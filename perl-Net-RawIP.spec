@@ -9,7 +9,7 @@ Summary:	Net::RawIP perl module
 Summary(pl):	Modu³ perla Net::RawIP
 Name:		perl-Net-RawIP
 Version:	0.1
-Release:	2
+Release:	3
 Epoch:		1
 # same as perl
 License:	GPL v1+ or Artistic
