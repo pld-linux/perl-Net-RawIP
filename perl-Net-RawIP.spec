@@ -10,6 +10,7 @@ Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	85fd004d7c6de96fab86f65d14ce4f17
 BuildRequires:	libpcap-devel
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-libnet
