@@ -28,7 +28,7 @@ Net::RawIP - wsparcie do manipulacji surowymi pakietami IP.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
