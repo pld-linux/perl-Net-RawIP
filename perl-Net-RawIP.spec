@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (uses network!)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	RawIP
+%define		pdir	Net
+%define		pnam	RawIP
 Summary:	Net::RawIP perl module
 Summary(pl):	Modu³ perla Net::RawIP
 Name:		perl-Net-RawIP
