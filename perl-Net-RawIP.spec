@@ -5,7 +5,7 @@ Summary:	Net-RawIP perl module
 Summary(pl):	Modu³ perla Net-RawIP
 Name:		perl-Net-RawIP
 Version:	0.09d
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -40,5 +40,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%{perl_sitelib}/*
+%{perl_sitearch}/Net/RawIP.pm
+%dir %{perl_sitearch}/auto/Net/RawIP
+%{perl_sitearch}/auto/Net/RawIP/RawIP.bs
+%attr(755,root,root) %{perl_sitearch}/auto/Net/RawIP/RawIP.so
+%{perl_sitearch}/auto/Net/RawIP/autosplit.ix
 %{_mandir}/man?/*
