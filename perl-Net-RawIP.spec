@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	RawIP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net-RawIP perl module
 Summary(pl):	Modu³ perla Net-RawIP
 Name:		perl-Net-RawIP
 Version:	0.09d
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Net-RawIP Perl extension to manipulate raw IP packets.
 Net-RawIP - wsparcie do manipulacji surowymi pakietami IP.
 
 %prep
-%setup -q -n Net-RawIP-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
