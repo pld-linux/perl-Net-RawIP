@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" (uses network!)
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	RawIP
@@ -7,7 +11,8 @@ Name:		perl-Net-RawIP
 Version:	0.1
 Release:	2
 Epoch:		1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	85fd004d7c6de96fab86f65d14ce4f17
@@ -31,10 +36,13 @@ Net::RawIP - wsparcie do manipulacji surowymi pakietami IP.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
