@@ -4,11 +4,13 @@
 Summary:	Net::RawIP perl module
 Summary(pl):	Modu³ perla Net::RawIP
 Name:		perl-Net-RawIP
-Version:	0.09d
-Release:	4
+Version:	0.1
+Release:	1
+Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+BuildRequires:	libpcap-devel
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-libnet
 BuildRequires:	rpm-perlprov >= 3.0.3-16
