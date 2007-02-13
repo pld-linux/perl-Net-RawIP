@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	RawIP
 Summary:	Net::RawIP perl module
-Summary(pl.UTF-8):   Moduł perla Net::RawIP
+Summary(pl.UTF-8):	Moduł perla Net::RawIP
 Name:		perl-Net-RawIP
 Version:	0.2
 Release:	1
