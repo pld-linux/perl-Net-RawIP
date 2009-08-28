@@ -8,14 +8,13 @@
 Summary:	Net::RawIP perl module
 Summary(pl.UTF-8):	Moduł perla Net::RawIP
 Name:		perl-Net-RawIP
-Version:	0.2
+Version:	0.25
 Release:	1
 Epoch:		1
-# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d64c07647e4aa1a0b80e153ec351e9c5
+# Source0-md5:	a99f461e20e7894154f64729a4652448
 BuildRequires:	libpcap-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libnet
@@ -55,4 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/auto/Net/RawIP/RawIP.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Net/RawIP/RawIP.so
 %{perl_vendorarch}/auto/Net/RawIP/autosplit.ix
+%dir %{perl_vendorarch}/Net/RawIP
+%{perl_vendorarch}/Net/RawIP/*.pm
 %{_mandir}/man?/*
