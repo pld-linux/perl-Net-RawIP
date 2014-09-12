@@ -51,7 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Net/RawIP.pm
 %dir %{perl_vendorarch}/auto/Net/RawIP
-%{perl_vendorarch}/auto/Net/RawIP/RawIP.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Net/RawIP/RawIP.so
 %{perl_vendorarch}/auto/Net/RawIP/autosplit.ix
 %dir %{perl_vendorarch}/Net/RawIP
