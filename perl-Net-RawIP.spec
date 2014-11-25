@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" (uses network!)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Net
 %define		pnam	RawIP
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::RawIP perl module
 Summary(pl.UTF-8):	Moduł perla Net::RawIP
 Name:		perl-Net-RawIP
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a99f461e20e7894154f64729a4652448
+URL:		http://search.cpan.org/dist/Net-RawIP/
 BuildRequires:	libpcap-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libnet
