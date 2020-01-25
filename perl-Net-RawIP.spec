@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	RawIP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::RawIP perl module
 Summary(pl.UTF-8):	Moduł perla Net::RawIP
 Name:		perl-Net-RawIP
