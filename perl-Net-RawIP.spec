@@ -8,7 +8,7 @@ Summary:	Net::RawIP perl module
 Summary(pl.UTF-8):	Moduł perla Net::RawIP
 Name:		perl-Net-RawIP
 Version:	0.25
-Release:	15
+Release:	16
 Epoch:		1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
