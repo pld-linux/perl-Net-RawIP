@@ -1,0 +1,13 @@
+--- Net-RawIP-0.25/RawIP.xs.orig	2008-10-21 00:26:19.000000000 +0200
++++ Net-RawIP-0.25/RawIP.xs	2025-08-02 01:33:40.915403504 +0200
+@@ -4,6 +4,10 @@
+ #include "EXTERN.h"
+ #include "perl.h"
+ #include "XSUB.h"
++
++int tap(char *dev,unsigned int *my_eth_ip,unsigned char *my_eth_mac);
++int mac_disc(unsigned int addr,unsigned char * eth_mac);
++void send_eth_packet(int fd, char* eth_device, u_char *pkt, int len, int flag);
+ #ifdef __cplusplus
+ }
+ #endif

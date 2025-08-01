@@ -14,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a99f461e20e7894154f64729a4652448
+Patch0:		prototypes.patch
 URL:		http://search.cpan.org/dist/Net-RawIP/
 BuildRequires:	libpcap-devel
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -29,6 +30,7 @@ Net::RawIP - wsparcie do manipulacji surowymi pakietami IP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch -P0 -p1
 
 %build
 %{__perl} Makefile.PL \
